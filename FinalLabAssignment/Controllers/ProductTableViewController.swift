@@ -42,7 +42,9 @@ class ProductTableViewController: UITableViewController {
         cell?.textLabel?.text = products.name + " :  " + products.id
         cell?.detailTextLabel?.text = "\(products.description) pages - \(products.price)"
         return cell!
+        
     }
+    
     
 
     /*

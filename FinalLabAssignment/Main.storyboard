@@ -91,7 +91,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="Msx-lA-Iks">
                             <connections>
-                                <action selector="addBook:" destination="BYZ-38-t0r" id="cx6-e7-TSO"/>
+                                <action selector="ADD:" destination="BYZ-38-t0r" id="Tq9-tW-PMU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
