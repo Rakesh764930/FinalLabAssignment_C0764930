@@ -40,9 +40,14 @@ class ProductTableViewController: UITableViewController {
         let products = product![indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell")
         cell?.textLabel?.text = products.name + " :  " + products.id
-        cell?.detailTextLabel?.text = "\(products.description) pages - \(products.price)"
+        cell?.detailTextLabel?.text = "PRICE: \(products.price)-  \(products.description)  "
         return cell!
         
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+          let stbHome=UIStoryboard(name: "Main", bundle: nil)
+                                 let NHomeVC = stbHome.instantiateViewController(withIdentifier: "detailVC") as! DetailsTableViewController
+                                        navigationController?.pushViewController(NHomeVC, animated: true)
     }
     
     

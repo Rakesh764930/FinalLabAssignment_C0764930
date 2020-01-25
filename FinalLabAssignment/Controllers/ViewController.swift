@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        loadData()
+      //loadData()
         loadCoreData()
         
 //        NotificationCenter.default.addObserver(self, selector: #selector(saveData), name: UIApplication.willResignActiveNotification, object: nil)
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         let documentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         if documentPath.count > 0 {
             let documentDirectory = documentPath[0]
-            let filePath = documentDirectory.appending("/book.txt")
+            let filePath = documentDirectory.appending("/product.txt")
             return filePath
         }
         return ""
