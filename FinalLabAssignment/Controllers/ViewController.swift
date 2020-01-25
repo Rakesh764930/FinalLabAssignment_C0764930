@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func addBook(_ sender: UIBarButtonItem) {
+    @IBAction func addProduct(_ sender: UIBarButtonItem) {
         let id = textFields[0].text ?? ""
         let price =  Int(textFields[1].text ?? "0") ?? 0
         let description = textFields[2].text ?? ""
